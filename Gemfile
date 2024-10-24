@@ -6,14 +6,18 @@ ruby "3.2.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 
+
 #チュートリアルで新たに追加
 gem "bootstrap-sass",  "3.4.1"
-
+#has_secure_passwordを使用するための最先端のハッシュ関数であるbcryptライブラリが必要
+gem "bcrypt",          "3.1.18"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
+
+gem "pg"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
