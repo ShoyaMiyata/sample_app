@@ -11,6 +11,9 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "bootstrap-sass",  "3.4.1"
 #has_secure_passwordを使用するための最先端のハッシュ関数であるbcryptライブラリが必要
 gem "bcrypt",          "3.1.18"
+gem "faker",           "2.21.0"
+gem "will_paginate",           "3.3.1"
+gem "bootstrap-will_paginate", "1.0.0"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
