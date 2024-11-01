@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   post   "/login",      to: "sessions#create"
   delete "/logout",   to: "sessions#destroy"
   resources :users
+  resources :account_activations, only: [:edit]
+  #不要なルートがアプリケーションに存在しなくなるため、セキュリティの向上やコードの可読性の向上につながる。
+  #意図的に限定することで、そのリソースが「編集のみを目的としたもの」と分かりやすくなる
 end
+
